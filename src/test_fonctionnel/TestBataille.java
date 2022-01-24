@@ -7,6 +7,7 @@ public class TestBataille {
     public static void main(String[] args) {
 
         Druide druide = new Druide(5,10);
+        druide.preparerPotion();
 
         Gaulois asterix = new Gaulois("Asterix", 8);
         Gaulois abraracourcix = new Gaulois("Abraracourcix", 5);

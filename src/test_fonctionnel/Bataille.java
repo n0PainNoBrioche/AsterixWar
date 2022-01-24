@@ -57,10 +57,12 @@ public class Bataille {
                 if(guerrierRomain.getStrenght() == 0){
                     campsRomain.remove(guerrierRomain);
                 }
-            } else if(guerrierGaulois.getEffetPotion() == 1){
-                druide.booster(guerrierGaulois);
-            } else{
-                campsGaulois.remove(guerrierGaulois);
+            } else {
+                if(guerrierGaulois.getEffetPotion() == 1){
+                    druide.booster(guerrierGaulois);
+                } else {
+                    campsGaulois.remove(guerrierGaulois);
+                }
             }
         }
     }
